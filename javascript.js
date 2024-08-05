@@ -1,4 +1,9 @@
-let MAX = 57;
-let actual = MAX - 13;
-let percentage = actual / MAX;
+let ask = (question,yes,no) => confirm(question) ? yes() : no();
 
+
+
+ask (
+    "Do you agree",
+    () => alert('You agreed'),
+    () => alert('You did not agree') 
+);
