@@ -12,3 +12,10 @@ para.textContent = "This is red text";
 para.setAttribute("style","color:red");
 
 container.appendChild(para);
+
+const heading = document.createElement("h3");
+heading.classList.add("heading-3");
+heading.textContent = "This is a blue h3";
+heading.setAttribute("style", "color:blue");
+
+container.appendChild(heading);
