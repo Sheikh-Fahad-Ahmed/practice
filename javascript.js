@@ -36,7 +36,6 @@ secondContent.appendChild(secondPara);
 container.appendChild(secondContent);
 
 const btn = document.querySelector("#btn");
-btn.addEventListener("click", () => {
-    alert("hello event listener");
+btn.addEventListener("click", function (e) {
+    e.target.style.background = "blue";
 });
-
