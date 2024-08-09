@@ -9,7 +9,7 @@ container.appendChild(content);
 const para = document.createElement("p");
 para.classList.add("paragraph");
 para.textContent = "This is red text";
-para.setAttribute("style","color:red");
+para.setAttribute("style", "color:red");
 
 container.appendChild(para);
 
@@ -25,7 +25,7 @@ secondContent.classList.add("secondContent");
 secondContent.setAttribute("style", "border: 1px solid black;background-color:pink");
 
 const secondHeading = document.createElement("h1");
-secondHeading.textContent ="Im in a div";
+secondHeading.textContent = "Im in a div";
 
 const secondPara = document.createElement("p");
 secondPara.textContent = "Me Too!";
@@ -34,4 +34,9 @@ secondContent.appendChild(secondHeading);
 secondContent.appendChild(secondPara);
 
 container.appendChild(secondContent);
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", () => {
+    alert("hello event listener");
+});
 
